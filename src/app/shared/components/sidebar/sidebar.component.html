@@ -1,0 +1,59 @@
+<ul class="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
+  <!-- Sidebar - Brand -->
+  <a class="sidebar-brand d-none d-sm-flex d-xl-none align-items-center justify-content-center" href="index.html">
+    <div class="sidebar-brand-text mr-4 h5">
+      <i class="fas fa-star-of-life text-darkest-purple"></i> Covid
+      <sup class="text-darkest-purple">19</sup>
+    </div>
+  </a>
+
+  <!-- Divider -->
+  <hr class="sidebar-divider my-0">
+
+  <!-- Nav Item - Dashboard -->
+  <li class="nav-item" routerLinkActive="active">
+    <a class="nav-link" [routerLink]="[ '/dashboard' ]">
+      <i class="fas fa-fw fa-tachometer-alt"></i>
+      <span>Dashboard</span>
+    </a>
+  </li>
+
+  <li class="nav-item" routerLinkActive="active">
+    <a class="nav-link" [routerLink]="[ '/healthboard' ]">
+      <i class="fas fa-fw fa-clinic-medical"></i>
+      <span>Health Board</span>
+    </a>
+  </li>
+
+  <li class="nav-item" routerLinkActive="active">
+    <a class="nav-link" [routerLink]="[ '/manage-associates' ]">
+      <i class="fas fa-fw fa-file"></i>
+      <span>Manage Associates</span>
+    </a>
+  </li>
+
+  <li class="nav-item" routerLinkActive="active">
+    <a class="nav-link" [routerLink]="[ '/broadcast' ]">
+      <i class="fas fa-fw fa-broadcast-tower"></i>
+      <span>Braodcast</span>
+    </a>
+  </li>
+
+  <li class="nav-item" routerLinkActive="active">
+    <a class="nav-link" [routerLink]="[ '/viewtrack' ]">
+      <i class="fas fa-fw fa-binoculars"></i>
+      <span>View Tracking Info</span>
+    </a>
+  </li>
+
+
+
+  <!-- Divider -->
+  <hr class="sidebar-divider d-none d-md-block">
+
+  <!-- Sidebar Toggler (Sidebar) -->
+  <div class="text-center d-none d-md-inline">
+    <button class="rounded-circle border-0" id="sidebarToggle"></button>
+  </div>
+
+</ul>

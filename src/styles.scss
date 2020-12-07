@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import './assets/scss/variables';
+@import './assets/scss/bs-overrides';
+
+/* Importing Bootstrap SCSS file. */
+@import '~@swimlane/ngx-datatable/index.css';
+// @import '~@swimlane/ngx-datatable/themes/material.scss';
+@import '~@swimlane/ngx-datatable/themes/dark.scss';
+@import '~@swimlane/ngx-datatable/themes/bootstrap.scss';
+@import '~@swimlane/ngx-datatable/assets/icons.css';
+@import '~bootstrap/scss/bootstrap';
+
+// Import Custom SB Admin 2 Mixins and Components
+@import './assets/scss/mixins';
+@import './assets/scss/global';
+@import './assets/scss/utilities';
+
+// Custom Components
+@import './assets/scss/dropdowns';
+@import './assets/scss/navs';
+@import './assets/scss/buttons';
+@import './assets/scss/cards';
+@import './assets/scss/charts';
+@import './assets/scss/login';
+@import './assets/scss/error';
+@import './assets/scss/footer';

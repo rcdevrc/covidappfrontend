@@ -1,0 +1,17 @@
+<div>
+    <div class="row mt-2 mb-2 justify-content-end">
+        <div class="col-md-3 float-right">
+            <input 
+                #searchInputElement
+                id="searchBoxForTable"
+                type="text" 
+                class="form-control form-control-user form-input" 
+                placeholder="Search"
+                (keyup)="filterDatatable($event)"
+               value="" >
+        </div>
+    </div>
+    <ngx-datatable class="bootstrap table table-bordered table-dark"  [headerHeight]="50"
+        [limit]="10" rowHeight="auto" [rows]="rows" [columns]="cols" #table>
+    </ngx-datatable>
+</div>

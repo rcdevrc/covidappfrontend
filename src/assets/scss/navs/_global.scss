@@ -1,0 +1,73 @@
+// Global styles for both custom sidebar and topbar compoments
+
+.loaderImage {
+
+    z-index: 99999999999999;
+    background-image: url(../../img/loader.gif);
+    left: 50%;
+    position: fixed;
+    top: 50%;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 100px;
+
+}
+
+ 
+.preLoaderWrapper {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999!important;
+  background: rgb(0 0 0 / 80%) none repeat scroll 0 0;
+}
+
+
+.sidebar,
+.topbar {
+  .brand {
+    color: $white !important;
+  }
+  .nav-item {
+    // Customize Dropdown Arrows for Navbar
+    &.dropdown {
+      .dropdown-toggle {
+        &::after {
+          width: 1rem;
+          text-align: center;
+          float: right;
+          vertical-align: 0;
+          border: 0;
+          font-weight: 900;
+          content: '\f105';
+          font-family: 'Font Awesome 5 Free';
+        }
+      }
+      &.show {
+        .dropdown-toggle::after {
+          content: '\f107';
+        }
+      }
+    }
+    // Counter for nav links and nav link image sizing
+    .nav-link {
+      position: relative;
+      .badge-counter {
+        position: absolute;
+        transform: scale(0.7);
+        transform-origin: top right;
+        right: 0.25rem;
+        margin-top: -0.25rem;
+      }
+      .img-profile {
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,254 @@
+<div *ngIf="isLoading">
+    <div class="loaderImage"> </div>
+    <div class="preLoaderWrapper">  
+    </div>
+    </div>
+<style>
+    a#detail {
+        background: none!important;
+        border: none;
+        padding: 0!important;
+        font-family: arial, sans-serif;
+        color: #069;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+</style>
+
+
+<tabset [justified]="true">
+
+    <tab heading="Import Associates by CSV">
+        <app-widgetcard aria-selected="true">
+            <h6 class="widget-heading m-0 font-weight-bold">Select File to Upload</h6>
+            <form>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Select File</label>
+                    <div class="col-sm-10">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-secondary">Import Users</button>
+                    </div>
+                </div>
+            </form>
+        </app-widgetcard>
+    </tab>
+    <tab heading="Add New Associates">
+        <app-widgetcard>
+            <h6 class="widget-heading m-0 font-weight-bold">Add User</h6>
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col-12">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control"
+                                                    placeholder="Recipient's username" aria-label="Recipient's username"
+                                                    aria-describedby="button-addon2">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-secondary" type="button"
+                                                        id="button-addon2"><i class="fas fa-search"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="list-group list-group-flush mt-2 mb-2">
+                                        <li class="list-group-item list-group-item-light">Akil Anio</li>
+                                        <li class="list-group-item list-group-item-light">RC1356</li>
+                                        <li class="list-group-item list-group-item-light">Senior Interaction
+                                            Designer </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group row">
+                                        <div class="col-sm-12">
+                                            <button type="submit" class="btn btn-secondary mr-2">Add</button>
+                                            <button type="button" class="btn btn-light">Cancle</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <h5>Personal Information</h5>
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="list-group list-group-flush mt-2 mb-2">
+                                        <li class="list-group-item list-group-item-light">
+                                            <div class="row align-items-center justify-content-between">
+                                                <div class="col-6">Department</div>
+                                                <div class="col-6">UI/UX</div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-light">
+                                            <div class="row align-items-center justify-content-between">
+                                                <div class="col-6">Contact</div>
+                                                <div class="col-6">+1 2345 222 434</div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-light">
+                                            <div class="row align-items-center justify-content-between">
+                                                <div class="col-6">Emergency Contact</div>
+                                                <div class="col-6">+1 3434 897 000</div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-light">
+                                            <div class="row align-items-center justify-content-between">
+                                                <div class="col-6">Permanent Address</div>
+                                                <div class="col-6">345, West Senate road, Mounting wale,
+                                                    Naperville</div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-light">
+                                            <div class="row align-items-center justify-content-between">
+                                                <div class="col-6">Current Address</div>
+                                                <div class="col-6">12-D, Willington St, Northbridge colony,
+                                                    Block-10,
+                                                    Naperville</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </app-widgetcard>
+    </tab>
+
+    <tab heading="View/Manage Existing" id="manage">
+        <app-widgetcard>
+            <h6 class="widget-heading m-0 font-weight-bold">Manage/View User</h6>
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <!--
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col-12">
+                                    <form>
+                                        <div class="form-row">
+                                            <select class="custom-select">
+                                                <option selected>Select</option>
+                                                <option value="1">Feeling Good</option>
+                                                <option value="2">Feeling Not Good</option>
+                                                <option value="3">Covid 19 Positive</option>
+                                                <option value="4">Recovered</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <app-table [searchBy]="''" [rows]="feelingGooddata" [cols]="columns"
+                                               [searchableProperty]="searchingKey"></app-table>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+
+
+                        <div class="col-6">
+                            <div *ngIf="show">
+                                <h5>Associate Information: <a id="detail" (click)="gotoDetail()">View Tracking Detail
+                                </a>
+                                </h5>
+                            </div>
+                            <div *ngIf="!show">
+                                <h5>Associate Information
+                                </h5>
+                            </div>
+
+                            <form>
+                                <div class="form-group row">
+                                    <label for="title" class="col-sm-2 col-form-label">Associate Name</label>
+                                    <div class="col-sm-8">
+                                        <input type="search" class="form-control" id="search" placeholder="Name"  value={{associateName}}>
+                                    </div>
+
+                                </div>
+                                <div class="form-group row">
+                                    <label for="title" class="col-sm-2 col-form-label">Associate Department</label>
+                                    <div class="col-sm-8">
+                                        <input type="search" class="form-control" id="search" placeholder="Department"  value={{associateDepartment}}>
+                                    </div>
+
+                                </div>
+                                <div class="form-group row">
+                                    <label for="title" class="col-sm-2 col-form-label">Status</label>
+                                    <div class="col-sm-8">
+                                        <select class="custom-select" id="status" value="{{status}}">
+                                            <option selected>Select</option>
+                                            <option value="1" >Feeling Good</option>
+                                            <option value="2">Feeling Not Good</option>
+                                            <option value="3">Covid 19 Positive</option>
+                                            <option value="4">Recovered</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                                <div class="form-group row">
+                                    <label for="title" class="col-sm-2 col-form-label">Location</label>
+                                    <div class="col-sm-8">
+                                        <input type="search" class="form-control" id="search" placeholder="Location" value={{location}}>
+                                    </div>
+
+                                </div>
+                                <div class="form-group row">
+                                    <label for="date" class="col-sm-2 col-form-label">Date</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" placeholder="MM/DD/YYYY" bsDatepicker value={{date}}>
+                                    </div>
+
+                                </div>
+                                <div class="form-group row">
+                                    <label for="time" class="col-sm-2 col-form-label mt-2">Time</label>
+                                    <div class="col-sm-4">
+                                        <timepicker id="time"></timepicker>
+                                    </div>
+
+                                </div>
+                                <div class="form-group row">
+                                    <label for="title" class="col-sm-2 col-form-label mt-2">Comments</label>
+                                    <div class="col-sm-8">
+                                        <span id="comments" >{{comments}}</span>
+                                    </div>
+
+                                </div>
+                                <!-- <div class="form-group row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-secondary mr-2">Add</button>
+                                        <button type="submit" class="btn btn-light">Cancle</button>
+                                    </div>
+                                </div> -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </app-widgetcard>
+    </tab>
+</tabset>

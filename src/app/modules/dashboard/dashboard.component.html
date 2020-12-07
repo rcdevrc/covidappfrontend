@@ -1,0 +1,132 @@
+
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+  <h1 class="h3 mb-0 text-gray-200">Dashboard (Today)</h1>
+  <h6 class="text-gray-400 txt-shadow"><strong>{{ dDate | date }}</strong> {{ dDate | date: 'shortTime' }}</h6>
+</div>
+
+<!-- info record cards -->
+<app-infocards></app-infocards>
+<!-- info record cards end -->
+
+<!-- Content Row -->
+<div class="row">
+  <!-- Vertical Chart -->
+  <div class="col-xl-8 col-lg-7">
+    <app-widgetcard [ngClass]="'mb-4'">
+      <h6 class="widget-heading m-0 font-weight-bold">Statistics Graph</h6>
+      <app-widget-verticalbar></app-widget-verticalbar>
+    </app-widgetcard>
+
+    <app-widgetcard [ngClass]="'mb-4'">
+      <h6 class="widget-heading m-0 font-weight-bold">Covid 19 Progress</h6>
+      <app-widget-covidprogress></app-widget-covidprogress>
+    </app-widgetcard>
+
+    <app-widgetcard [ngClass]="'mb-4'">
+      <h6 class="widget-heading m-0 font-weight-bold">Broadcast</h6>
+      <app-widget-broadcast></app-widget-broadcast>
+    </app-widgetcard>
+
+  </div>
+
+  <!-- Pie Chart -->
+  <div class="col-xl-4 col-lg-5">
+    <app-widgetcard [ngClass]="'mb-0'">
+      <h6 class="widget-heading m-0 font-weight-bold">Statistics Chart</h6>
+      <app-widget-piechart></app-widget-piechart>
+    </app-widgetcard>
+    <accordion [isAnimated]="true">
+      <accordion-group heading="This Month">
+        <table style="font-size: .75rem;" class="table table-striped">
+          <tbody>
+            <tr>
+              <td>1 </td>
+              <td>Feel Good </td>
+              <td>{{feelingGoodCurrentMonth}} </td>
+              <td><i class="fa fa-caret-up text-success"></i> </td>
+            </tr>
+            <tr>
+              <td>2 </td>
+              <td>Feel Not Good </td>
+              <td>100 </td>
+              <td><i class="fa fa-caret-up text-success"></i> </td>
+            </tr>
+            <tr>
+              <td>3 </td>
+              <td>Covid 19 Positive </td>
+              <td>{{thisMonthCovid}} </td>
+              <td><i class="fa fa-caret-down text-danger"></i> </td>
+            </tr>
+            <tr>
+              <td>4 </td>
+              <td>Recovered </td>
+              <td>120 </td>
+              <td><i class="fa fa-caret-up text-success"></i> </td>
+            </tr>
+          </tbody>
+        </table>
+      </accordion-group>
+      <accordion-group heading="Last Month">
+        <table style="font-size: .75rem;" class="table table-striped">
+          <tbody>
+            <tr>
+              <td>1 </td>
+              <td>Feel Good </td>
+              <td>{{feelingGoodLastMonth}} </td>
+              <td><i class="fa fa-caret-up text-success"></i> </td>
+            </tr>
+            <tr>
+              <td>2 </td>
+              <td>Feel Not Good </td>
+              <td>200 </td>
+              <td><i class="fa fa-caret-up text-success"></i> </td>
+            </tr>
+            <tr>
+              <td>3 </td>
+              <td>Covid 19 Positive </td>
+              <td>{{lastMonthCovid}}</td>
+              <td><i class="fa fa-caret-down text-danger"></i> </td>
+            </tr>
+            <tr>
+              <td>4 </td>
+              <td>Recovered </td>
+              <td>100 </td>
+              <td><i class="fa fa-caret-up text-success"></i> </td>
+            </tr>
+          </tbody>
+        </table>
+      </accordion-group>
+      <accordion-group heading="May">
+        <table style="font-size: .75rem;" class="table table-striped">
+          <tbody>
+            <tr>
+              <td>1 </td>
+              <td>Feel Good </td>
+              <td>840 </td>
+              <td><i class="fa fa-caret-up text-success"></i> </td>
+            </tr>
+            <tr>
+              <td>2 </td>
+              <td>Feel Not Good </td>
+              <td>50 </td>
+              <td><i class="fa fa-caret-up text-success"></i> </td>
+            </tr>
+            <tr>
+              <td>3 </td>
+              <td>Covid 19 Positive </td>
+              <td>80 </td>
+              <td><i class="fa fa-caret-down text-danger"></i> </td>
+            </tr>
+            <tr>
+              <td>4 </td>
+              <td>Recovered </td>
+              <td>30</td>
+              <td><i class="fa fa-caret-up text-success"></i> </td>
+            </tr>
+          </tbody>
+        </table>
+      </accordion-group>
+    </accordion>
+  </div>
+</div>

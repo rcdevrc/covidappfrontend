@@ -1,0 +1,42 @@
+// Override Bootstrap default variables here
+// Do not edit any of the files in /vendor/bootstrap/scss/!
+
+ table td {
+  word-wrap:break-word;
+  
+  }
+.datatable-body-cell-label span{
+  word-wrap:break-word;
+}
+.table-dark {  
+  color: #fff;   
+  background-color: #51445f!important; 
+}
+.txt-shadow {
+  text-shadow: 2px 2px #000;
+}
+.bg-purple {
+  background-color: $purple !important;
+}
+.bg-dark-purple {
+  background-color: $purple-dark !important;
+}
+
+.bg-darkest-purple {
+  background-color: $purple-darkest !important;
+}
+
+.text-darkest-purple {
+  color: $purple-darkest !important;
+}
+
+.navbar-search {
+  .form-control,
+  .form-control:focus {
+    background: $purple-darkest !important;
+    border: 0;
+  }
+  .input-group-append {
+    align-items: center;
+  }
+}

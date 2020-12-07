@@ -1,0 +1,23 @@
+<app-header
+    (searchValueEmit)="onSearch($event)"
+></app-header>
+<div id="wrapper">
+
+  <app-sidebar></app-sidebar>
+
+  <!-- Content Wrapper -->
+  <div id="content-wrapper" class="d-flex flex-column bg-dark-purple">
+    <!-- Main Content -->
+    <div id="content" class="mt-4">
+      <!-- Begin Page Content -->
+      <div class="container-fluid">
+        <router-outlet></router-outlet>
+      </div>
+      <!-- Container Fluid Ends -->
+    </div>
+
+    <app-footer></app-footer>
+    <!-- End of Main Content -->
+  </div>
+  <!-- Content Wrapper Ends -->
+</div>

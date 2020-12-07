@@ -1,0 +1,28 @@
+<div *ngIf="isLoading">
+    <div class="loaderImage"> </div>
+    <div class="preLoaderWrapper">  
+    </div>
+    </div>
+<tabset [justified]="true">
+    <tab heading="Feeling Good">
+        <app-table
+        [searchBy] = "''"
+        [rows]="feelingGooddata" 
+        [cols]="columns"
+        [searchableProperty] = "searchingKey"></app-table>
+    </tab>
+    <tab heading="Feeling Not Good">
+        <app-table
+        [searchBy] = "''"
+        [rows]="notfeelingGooddata" 
+        [cols]="columns"
+        [searchableProperty] = "searchingKey"></app-table>
+    </tab>
+    <tab heading="Covid Affected">
+        <app-table
+        [searchBy] = "''"
+        [rows]="covidAffectedData" 
+        [cols]="columns"
+        [searchableProperty] = "searchingKey"></app-table>
+    </tab>
+</tabset>
