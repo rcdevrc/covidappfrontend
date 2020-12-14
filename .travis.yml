@@ -14,8 +14,6 @@ cache:
 install:
   - npm install
 
-script:
-  - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
   
 before_install:
   - # start your web application and listen on `localhost`
